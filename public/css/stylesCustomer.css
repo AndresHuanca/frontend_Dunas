@@ -1,0 +1,154 @@
+
+/* navbar hotel */
+.navbar-custom {
+    background-image: url('../assets/2.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo del navbar */
+    background-position: center; /* Ajusta la posición de la imagen en el fondo del navbar */
+
+}
+/* Color de letras navbar */
+.navbar-dark .navbar-nav .nav-link:not(.dropdown-toggle) {
+    color: #d17123;
+  }
+
+.navbar {
+  font-weight: bold;
+  max-height: 80px;
+}
+/* Imagen de logo */
+.logo-img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(38, 30, 30);
+    -webkit-text-stroke: 1px rgb(149, 71, 7);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(44, 39, 39);
+    font-size: 20px; /* Ajusta el tamaño de la letra aquí */
+  }
+  
+  /* habitaciones */
+.experiencias-section {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo02  {
+  text-align: center;
+  font-family: "Algerian", sans-serif; /* Cambia "Arial" por la fuente que desees */
+  color: #3d9726;
+  font-weight: bold; /*Aplica estilo negrita*/
+}
+
+.titulo03  {
+  text-align: center;
+  font-family: "Arial", sans-serif; /* Cambia "Arial" por la fuente que desees */
+  color: #0a0a09;
+  font-weight: bold; /* Aplica estilo negrita */
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+/* Para que sea responsive */
+.image-row img {
+  max-width: 500px;
+  height: 500px; /* Establece aquí la altura deseada */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio */
+  border: 2px solid #ccc; /* Establece el ancho y color del borde */
+  border-radius: 10px; /* Establece el radio de las esquinas redondeadas */
+}
+
+
+@media (max-width: 768px) {
+  .image-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* yape plin */
+.imagen-qr {
+  max-width: 50%;
+  height: auto;
+  border: 2px solid rgb(14, 14, 15); /* Contorno resaltado */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+/*yape plin  */
+
+/* reservas */
+.confirmado {
+  background-color: #c3e6cb;
+  color: #000;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+/* reservas */
+
+
+
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: auto;
+  background-image: url('../assets/footers.png');
+  background-size: 100% 100%; /* Ajustar el tamaño de la imagen para ocupar todo el fondo */
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-info,
+.footer-links {
+  width: 50%;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */

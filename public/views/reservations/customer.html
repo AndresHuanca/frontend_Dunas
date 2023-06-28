@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospedaje Las Dunas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/stylesCustomer.css">
+</head>
+<body>
+<!--Navbar  -->
+<nav class="navbar navbar-expand navbar-dark bg-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.png" alt="Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../bedrooms/bedrooms.html">Habitaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reservas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Navbar  -->
+
+<!-- Main -->
+<main>
+  <div class="content-container">
+    <h3 class="titulo02">Proceso de Reserva de Habitaciones</h3>
+  
+  <!--  -->
+  <div class="container d-flex justify-content-center">
+    <div class="card w-50">
+      <div class="card-body">
+        <form id="reservaForm" method="post">
+          <h5 class="card-title">Proceso de Reserva de Habitaciones</h5>
+  
+          <div class="form-group">
+            <label for="matrimonial">Habitación Matrimonial - Precio: S/45.00</label>
+            <input type="number" class="form-control" id="matrimonial" name="matrimonial" min="0" max="7">
+          </div>
+  
+          <div class="form-group">
+            <label for="doble">Habitación Doble - Precio: S/60.00</label>
+            <input type="number" class="form-control" id="doble" name="doble" min="0" max="3">
+          </div>
+  
+          <div class="form-group">
+            <label for="personal">Habitación Personal - Precio: S/35.00</label>
+            <input type="number" class="form-control" id="personal" name="personal" min="0" max="2">
+            <small class="form-text text-muted">Ingrese el número de habitaciones según el tipo.</small>
+          </div>
+  
+          <div class="form-group">
+            <label for="cliente">Nombre de la persona a hospedarse</label>
+            <input class="form-control" id="cliente" name="cliente" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="dni">DNI</label>
+            <input type="number" class="form-control" id="dni" name="dni" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="inicioReserva">Fecha de inicio de reserva</label>
+            <input type="date" class="form-control" id="inicioReserva" name="fecha_inicio" min="<?php echo date('Y-m-d'); ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="salidaReserva">Fecha de salida</label>
+            <input type="date" class="form-control" id="salidaReserva" name="fecha_fin" min="<?php echo date('Y-m-d'); ?>" required>
+          </div>
+  
+          <hr>
+  
+          <div class="image-container">
+            <img src="../../assets/plin.jpeg" alt="QR Code plin" class="imagen-qr">
+            <img src="../../assets/yape.jpeg" alt="QR Code yape" class="imagen-qr">
+          </div>
+  
+          <hr>
+  
+          <p>Número de celular: 999 461 060</p>
+          <p>Pago con Plin o Yape</p>
+          <p>El pago debe salir a nombre de Andri Huanca Namuche</p>
+  
+          <div class="form-group">
+            <label for="voucherInput">Subir voucher de validación de reserva</label>
+            <input type="file" class="form-control-file" id="myFile" name="img" required>
+          </div>
+          <div>
+            <h4>Total: <span id="totalPrecio" ></span></h4>
+            <input type="hidden" id="totalPrecio" name="totalPrecio">
+          </div>
+          <div id="messageError" ></div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Procesar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ... -->
+  <br>
+  <h3 class="titulo02">Reservas</h3>
+  <br>
+  <!-- Reservas Exitosas -->
+  <div class="container d-flex justify-content-center">
+    <div class="card w-100">
+      <div class="card-body">
+        <div class="card">
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Hospedado</th>
+                  <th>DNI</th>
+                  <th>Inicio</th>
+                  <th>Salida</th>
+                  <th>Tipo de Habitación </th>
+                  <th>Tipo de Habitación </th>
+                  <th>Tipo de Habitación </th>
+                  <th>Total</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>12345678</td>
+                  <td>2023-07-01</td>
+                  <td>2023-07-07</td>
+                  <td>Personal</td>
+                  <td>Matrimonial</td>
+                  <td>Doble</td>
+                  <td>S/ 350.00</td>
+                <td><span class="confirmado">Confirmado</span></td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <h3>Contacto</h3>
+            <p>Dirección: Jr. Alfonso Ugarte N°:2263 - Tarapoto</p>
+            <p>Teléfono: +51 999 461 060</p>
+          </div>
+          <div class="footer-links">
+            <h3>Enlaces útiles</h3>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Habitaciones</a></li>
+              <li><a href="#">Reservas</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </main>
+  
+  <!-- Script -->
+ <!-- Script -->
+ <!-- Script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+<!-- script customer.js -->
+<script src="../../js/reservation/customer.js" ></script>
+<!-- Main -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospedaje Las Dunas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<!--Navbar  -->
+<nav class="navbar navbar-expand navbar-dark bg-dark navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" alt="Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./views/bedrooms/bedrooms.html">Habitaciones</a>
+        </li>
+        <!-- Reservation -->
+        <div id="reserva"></div>
+        <div id="modal"></div>
+        <!-- Reservation -->
+        <!-- Logout -->
+        <div id="login/logout"></div>
+        <!-- Logout -->
+        <!-- Gestión de habitaciones -->
+        <div id="gestionHabitacion"></div>
+        <!-- Gestión de habitaciones -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Navbar  -->
+
+<!-- Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center">
+        <button type="button" class="btn btn-primary me-2" id="btnIngresar">Ingresar</button>
+        <button type="button" class="btn btn-primary" id="btnRegistrarse">Registrarse</button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>      
+      <div class="modal-body" id="modalBody">
+        <!-- Contenido del formulario de inicio de sesión -->
+        <form id="formLogin" method="post">
+          <div class="mb-3">
+            <label for="emailIngresar" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="emailIngresar" name="correo" required/>
+          </div>
+          <div class="mb-3">
+            <label for="passwordIngresar" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="passwordIngresar" name="password"  required/>
+          </div>
+          <!-- Div Message Error -->
+          <div id = "messageError"></div>
+          <!-- Div Message Error -->
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+        
+
+        <!-- Contenido del formulario de registro (inicialmente oculto) -->
+        <form id="formRegister" style="display: none;">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre"required>
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellido" placeholder="Apellidos"required>
+          </div>
+          <div class="mb-3">
+            <label for="emailRegistrarse" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="emailRegistrarse" name="correo" placeholder="Correo electronico"required>
+          </div>
+          <div class="mb-3">
+            <label for="passwordRegistrarse" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="passwordRegistrarse" name="password" placeholder="Contraseña"required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmarPassword" class="form-label">Repetir contraseña</label>
+            <input type="password" class="form-control" name="repeatPassword" id="confirmarPassword" required>
+          </div>
+          <div id = "messageError01"></div>
+          <div id = "messageError02"></div>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Main -->
+<main>
+  <div class="content-container">
+    <section class="hospedaje-section">
+      <h1>Bienvenido al Hospedaje Las Dunas</h1>
+        <img src="./assets/hotel.jpg" alt="Foto del Hospedaje" class="hospedaje-img">
+    </section>
+      <!-- Nueva sección -->
+      <h3 class="titulo02">Ven y Disfruta una Grata Experiencia</h3>
+      <section class="experiencias-section">
+        <div class="image-row">
+          <img src="./assets/ex02.jpg" alt="Foto del Hospedaje" >
+          <img src="./assets/ex04.jpg" alt="Foto del Hospedaje" >
+          <img src="./assets/ex01.jpg" alt="Foto del Hospedaje" >
+          <img src="./assets/ex03.jpg" alt="Foto del Hospedaje" >
+        </div>
+      </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Contacto</h3>
+          <p>Dirección: Jr. Alfonso Ugarte N°:2263 - Tarapoto</p>
+          <p>Teléfono: +51 34567890</p>
+        </div>
+        <div class="footer-links">
+          <h3>Enlaces útiles</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./views/bedrooms/bedrooms.html">Habitaciones</a></li>
+            <li><a href="#">Reservas</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+  </div>
+</main>
+<!-- Main -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- scrip js aut manual -->
+<script src="./js/login/login.js" ></script>
+<script src="./js/login/index.js"></script>
+<script src="./js/login/register.js"></script>
+
+
+<script src=""></script>
+</body>
+</html>

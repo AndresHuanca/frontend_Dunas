@@ -1,0 +1,191 @@
+/* navbar hotel */
+.navbar-custom {
+  background-image: url('../assets/2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-dark .navbar-nav .nav-link:not(.dropdown-toggle) {
+  color: #d17123;
+}
+
+.navbar {
+  font-weight: bold;
+  max-height: 80px;
+}
+
+.logo-img {
+  max-width: 150px;
+  height: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(38, 30, 30);
+  -webkit-text-stroke: 1px rgb(149, 71, 7);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(44, 39, 39);
+  font-size: 20px;
+}
+
+/* habitaciones */
+.experiencias-section {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo02 {
+  text-align: center;
+  font-family: "Algerian", sans-serif;
+  color: #3d9726;
+  font-weight: bold;
+}
+
+.titulo03 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #0a0a09;
+  font-weight: bold;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.image-row img {
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-row {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* habitaciones */
+.navbar-custom {
+  background-image: url('../../assets/2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.room {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.available {
+  background-color: green;
+}
+
+.occupied {
+  background-color: red;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url('../../assets/footers.png');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+/* habitaciones */
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url('../assets/footers.png');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-info,
+.footer-links {
+  width: 50%;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom {
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-container {
+  min-height: calc(100vh - 80px); /* Restar la altura de la navbar */
+  display: flex;
+  flex-direction: column;
+}

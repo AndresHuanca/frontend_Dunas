@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedaje Las Dunas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../css/stylesAdministrador.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../../assets/logo.png"
+            alt="Logo"
+            style="max-width: 150px; height: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bedrooms/bedrooms.html">Habitaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h3 class="titulo02">"Gestión de Habitaciones"</h3>
+    <div class="container">
+      <div class="card card-container m-4">
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <div class="room single-room available" onclick="openModal(this)">
+                <strong>3</strong>
+                <p>Personales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room married-room available" onclick="openModal(this)">
+                <strong>4</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room married-room available" onclick="openModal(this)">
+                <strong>5</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>7</strong>
+                <p>Dobles</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room married-room available" onclick="openModal(this)">
+                <strong>8</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room married-room available" onclick="openModal(this)">
+                <strong>9</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>10</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>11</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>12</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>13</strong>
+                <p>Dobles</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>14</strong>
+                <p>Dobles</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>15</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room double-room available" onclick="openModal(this)">
+                <strong>16</strong>
+                <p>Matrimoniales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="room single-room available" onclick="openModal(this)">
+                <strong>17</strong>
+                <p>Personales</p>
+                <select class="form-select" onchange="updateRoomStatus(this)">
+                  <option value="available">Libre</option>
+                  <option value="occupied">Ocupada</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- general -->
+    
+    <div class="card text-center m-4">
+        <div class="card-body">
+          <h5 class="card-title">Descripción general de habitaciones</h5>
+          <div class="row">
+            <div class="col">
+              <h6>Total de habitaciones ocupadas</h6>
+              <p>5</p>
+            </div>
+            <div class="col">
+              <h6>Total de habitaciones libres</h6>
+              <p>10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- general -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Contacto</h3>
+          <p>Dirección: Jr. Alfonso Ugarte N°:2263 - Tarapoto</p>
+          <p>Teléfono: +51 34567890</p>
+        </div>
+        <div class="footer-links">
+          <h3>Enlaces útiles</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="../bedrooms/bedrooms.html">Habitaciones</a></li>
+            <li><a href="#">Reservas</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function updateRoomStatus(selectElement) {
+        var room = selectElement.parentNode;
+        if (selectElement.value === "available") {
+          room.classList.remove("occupied");
+          room.classList.add("available");
+        } else {
+          room.classList.remove("available");
+          room.classList.add("occupied");
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="../../js/administrador.js"></script>-->
+  </body>
+</html>
