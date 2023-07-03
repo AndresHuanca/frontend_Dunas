@@ -4,7 +4,7 @@
 
     const url = ( window.location.hostname.includes('localhost') )
                 ? 'http://localhost:8080/api/auth/'
-                : 'hhttps://frontenddunas-production.up.railway.app/api/auth/';
+                : 'https://frontenddunas-production.up.railway.app/api/auth/';
     
     // validarAdmin url para local y produccion 
     const urlAdmin = ( window.location.hostname.includes('localhost') )
