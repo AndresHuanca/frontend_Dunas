@@ -5,23 +5,23 @@ const  miFormulario = document.querySelector('#reservaForm');
 // validarJWT url para local y produccion 
 const url = ( window.location.hostname.includes('localhost') )
         ? 'http://localhost:8080/api/auth/'
-        : 'https://backend-nodejs-postgresql.up.railway.app/api/auth/';
+        : 'https://frontenddunas-production.up.railway.app/api/auth/';
 
 // validarAdmin url para local y produccion 
 const urlAdmin = ( window.location.hostname.includes('localhost') )
         ? 'http://localhost:8080/api/usuarios/'
-        : 'https://backend-nodejs-postgresql.up.railway.app/api/usuarios/';
+        : 'https://frontenddunas-production.up.railway.app/api/usuarios/';
 
 // Post reserva
 // validarAdmin url para local y produccion 
 const urlReserva = ( window.location.hostname.includes('localhost') )
         ? 'http://localhost:8080/api/productos_x_carritos/'
-        : 'https://backend-nodejs-postgresql.up.railway.app/api/productos_x_carritos/';
+        : 'https://frontenddunas-production.up.railway.app/api/productos_x_carritos/';
 
 
 const urlUuid = ( window.location.hostname.includes('localhost') )
         ? 'http://localhost:8080/api/carritos/get/'
-        : 'https://backend-nodejs-postgresql.up.railway.app/api/productos_x_carritos/';
+        : 'https://frontenddunas-production.up.railway.app/api/productos_x_carritos/';
 
 
 let usuario = null;

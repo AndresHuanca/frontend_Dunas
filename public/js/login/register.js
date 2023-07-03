@@ -4,7 +4,7 @@
 
     const url01 = ( window.location.hostname.includes('localhost') )
                 ? 'http://localhost:8080/api/usuarios/'
-                : 'https://backend-nodejs-postgresql.up.railway.app/api/usuarios/';
+                : 'https://frontenddunas-production.up.railway.app/api/usuarios/';
                 
 
     miFormulario01.addEventListener( 'submit', event => {
