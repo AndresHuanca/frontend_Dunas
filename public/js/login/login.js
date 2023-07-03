@@ -4,12 +4,12 @@
 
     const url = ( window.location.hostname.includes('localhost') )
                 ? 'http://localhost:8080/api/auth/'
-                : 'https://frontenddunas-production.up.railway.app/api/auth/';
+                : 'https://backen-hospedajelasdunas-production.up.railway.app/api/auth/';
     
     // validarAdmin url para local y produccion 
     const urlAdmin = ( window.location.hostname.includes('localhost') )
                 ? 'http://localhost:8080/api/usuarios/'
-                : 'https://frontenddunas-production.up.railway.app/api/usuarios/';
+                : 'https://backen-hospedajelasdunas-production.up.railway.app/api/usuarios/';
                 
 
    miFormulario.addEventListener( 'submit', event => {
