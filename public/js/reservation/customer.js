@@ -1,14 +1,14 @@
 const miFormulario = document.querySelector('#reservaForm');
-const url = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/auth/' : 'https://backend-nodejs-postgresql.up.railway.app/api/auth/';
-const urlAdmin = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/usuarios/' : 'https://backend-nodejs-postgresql.up.railway.app/api/usuarios/';
-const urlReserva = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/productos_x_carritos/' : 'https://backend-nodejs-postgresql.up.railway.app/api/productos_x_carritos/';
-const urlUuid_carrito = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/carritos/one/' : 'https://backend-nodejs-postgresql.up.railway.app/api/carritos/one/';
+const url = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/auth/' : 'https://backen-hospedajelasdunas-production.up.railway.app/api/auth/';
+const urlAdmin = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/usuarios/' : 'https://backen-hospedajelasdunas-production.up.railway.app/api/usuarios/';
+const urlReserva = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/productos_x_carritos/' : 'https://backen-hospedajelasdunas-production.up.railway.app/api/productos_x_carritos/';
+const urlUuid_carrito = (window.location.hostname.includes('localhost')) ? 'http://localhost:8080/api/carritos/one/' : 'https://backen-hospedajelasdunas-production.up.railway.app/api/carritos/one/';
 
 const urlMostrarReserva = (window.location.hostname.includes('localhost'))
                           ? 'http://localhost:8080/api/productos_x_carritos/' 
-                          : 'https://backend-nodejs-postgresql.up.railway.app/api/productos_x_carritos/';
+                          : 'https://backen-hospedajelasdunas-production.up.railway.app/api/productos_x_carritos/';
 
-
+                          
 
 let usuario = null;
 let nombre = "";
