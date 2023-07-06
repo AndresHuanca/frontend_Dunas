@@ -134,7 +134,6 @@ const getUuid = async (user) => {
             return console.error(msg);
           }
           alert("Reserva Procesada");
-          window.location = '../../views/reservations/customer.html';
         })
         .catch(err => {
           console.log(err);
